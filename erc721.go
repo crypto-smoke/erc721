@@ -30,7 +30,7 @@ var (
 
 // ERC721MetaData contains all meta data concerning the ERC721 contract.
 var ERC721MetaData = &bind.MetaData{
-	ABI: "[{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_initialBaseURI\",\"type\":\"string\"},{\"internalType\":\"address\",\"name\":\"_openSeaProxyRegistryAddress\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"approved\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Approval\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"bool\",\"name\":\"approved\",\"type\":\"bool\"}],\"name\":\"ApprovalForAll\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"MAX_PRESALE_PRIMATE_PURCHASE\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"MAX_PRIMATES\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"MAX_PRIMATE_PURCHASE\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"PRIMATE_RESERVE\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"PURCHASEABLE_PRESALES\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"approve\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"baseURI\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"buyIntoPreSale\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"flipPreSaleState\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"flipSaleState\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"getApproved\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"isApprovedForAll\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"maxAvailableForSell\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"numberOfTokens\",\"type\":\"uint256\"}],\"name\":\"mintPreSalePrimates\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"numberOfTokens\",\"type\":\"uint256\"}],\"name\":\"mintPrimates\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"ownerOf\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"preSaleBuyInPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"preSaleIsActive\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"presalePurchases\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"price\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address[]\",\"name\":\"addresses\",\"type\":\"address[]\"}],\"name\":\"removeWhitelistAddresses\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"numberOfTokens\",\"type\":\"uint256\"}],\"name\":\"reservePrimates\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"safeTransferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"_data\",\"type\":\"bytes\"}],\"name\":\"safeTransferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"saleIsActive\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"internalType\":\"bool\",\"name\":\"approved\",\"type\":\"bool\"}],\"name\":\"setApprovalForAll\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_newBaseURI\",\"type\":\"string\"}],\"name\":\"setBaseURI\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_price\",\"type\":\"uint256\"}],\"name\":\"setPreSaleBuyInPrice\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_price\",\"type\":\"uint256\"}],\"name\":\"setPrice\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"symbol\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"index\",\"type\":\"uint256\"}],\"name\":\"tokenByIndex\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"index\",\"type\":\"uint256\"}],\"name\":\"tokenOfOwnerByIndex\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"tokenURI\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"totalSupply\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"transferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"whitelist\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address[]\",\"name\":\"addresses\",\"type\":\"address[]\"}],\"name\":\"whitelistAddresses\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"withdraw\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}]",
+	ABI: "[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"approved\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Approval\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"bool\",\"name\":\"approved\",\"type\":\"bool\"}],\"name\":\"ApprovalForAll\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"Paused\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"}],\"name\":\"Unpaused\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"approve\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"getApproved\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"isApprovedForAll\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"ownerOf\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"pause\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"paused\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"}],\"name\":\"safeMint\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"safeTransferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"_data\",\"type\":\"bytes\"}],\"name\":\"safeTransferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"internalType\":\"bool\",\"name\":\"approved\",\"type\":\"bool\"}],\"name\":\"setApprovalForAll\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"symbol\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"index\",\"type\":\"uint256\"}],\"name\":\"tokenByIndex\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"index\",\"type\":\"uint256\"}],\"name\":\"tokenOfOwnerByIndex\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"tokenURI\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"totalSupply\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"transferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"unpause\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}]",
 }
 
 // ERC721ABI is the input ABI used to generate the binding from.
@@ -179,161 +179,6 @@ func (_ERC721 *ERC721TransactorRaw) Transact(opts *bind.TransactOpts, method str
 	return _ERC721.Contract.contract.Transact(opts, method, params...)
 }
 
-// MAXPRESALEPRIMATEPURCHASE is a free data retrieval call binding the contract method 0xeb60962c.
-//
-// Solidity: function MAX_PRESALE_PRIMATE_PURCHASE() view returns(uint256)
-func (_ERC721 *ERC721Caller) MAXPRESALEPRIMATEPURCHASE(opts *bind.CallOpts) (*big.Int, error) {
-	var out []interface{}
-	err := _ERC721.contract.Call(opts, &out, "MAX_PRESALE_PRIMATE_PURCHASE")
-
-	if err != nil {
-		return *new(*big.Int), err
-	}
-
-	out0 := *abi.ConvertType(out[0], new(*big.Int)).(**big.Int)
-
-	return out0, err
-
-}
-
-// MAXPRESALEPRIMATEPURCHASE is a free data retrieval call binding the contract method 0xeb60962c.
-//
-// Solidity: function MAX_PRESALE_PRIMATE_PURCHASE() view returns(uint256)
-func (_ERC721 *ERC721Session) MAXPRESALEPRIMATEPURCHASE() (*big.Int, error) {
-	return _ERC721.Contract.MAXPRESALEPRIMATEPURCHASE(&_ERC721.CallOpts)
-}
-
-// MAXPRESALEPRIMATEPURCHASE is a free data retrieval call binding the contract method 0xeb60962c.
-//
-// Solidity: function MAX_PRESALE_PRIMATE_PURCHASE() view returns(uint256)
-func (_ERC721 *ERC721CallerSession) MAXPRESALEPRIMATEPURCHASE() (*big.Int, error) {
-	return _ERC721.Contract.MAXPRESALEPRIMATEPURCHASE(&_ERC721.CallOpts)
-}
-
-// MAXPRIMATES is a free data retrieval call binding the contract method 0xe92e32a6.
-//
-// Solidity: function MAX_PRIMATES() view returns(uint256)
-func (_ERC721 *ERC721Caller) MAXPRIMATES(opts *bind.CallOpts) (*big.Int, error) {
-	var out []interface{}
-	err := _ERC721.contract.Call(opts, &out, "MAX_PRIMATES")
-
-	if err != nil {
-		return *new(*big.Int), err
-	}
-
-	out0 := *abi.ConvertType(out[0], new(*big.Int)).(**big.Int)
-
-	return out0, err
-
-}
-
-// MAXPRIMATES is a free data retrieval call binding the contract method 0xe92e32a6.
-//
-// Solidity: function MAX_PRIMATES() view returns(uint256)
-func (_ERC721 *ERC721Session) MAXPRIMATES() (*big.Int, error) {
-	return _ERC721.Contract.MAXPRIMATES(&_ERC721.CallOpts)
-}
-
-// MAXPRIMATES is a free data retrieval call binding the contract method 0xe92e32a6.
-//
-// Solidity: function MAX_PRIMATES() view returns(uint256)
-func (_ERC721 *ERC721CallerSession) MAXPRIMATES() (*big.Int, error) {
-	return _ERC721.Contract.MAXPRIMATES(&_ERC721.CallOpts)
-}
-
-// MAXPRIMATEPURCHASE is a free data retrieval call binding the contract method 0x8f18ab06.
-//
-// Solidity: function MAX_PRIMATE_PURCHASE() view returns(uint256)
-func (_ERC721 *ERC721Caller) MAXPRIMATEPURCHASE(opts *bind.CallOpts) (*big.Int, error) {
-	var out []interface{}
-	err := _ERC721.contract.Call(opts, &out, "MAX_PRIMATE_PURCHASE")
-
-	if err != nil {
-		return *new(*big.Int), err
-	}
-
-	out0 := *abi.ConvertType(out[0], new(*big.Int)).(**big.Int)
-
-	return out0, err
-
-}
-
-// MAXPRIMATEPURCHASE is a free data retrieval call binding the contract method 0x8f18ab06.
-//
-// Solidity: function MAX_PRIMATE_PURCHASE() view returns(uint256)
-func (_ERC721 *ERC721Session) MAXPRIMATEPURCHASE() (*big.Int, error) {
-	return _ERC721.Contract.MAXPRIMATEPURCHASE(&_ERC721.CallOpts)
-}
-
-// MAXPRIMATEPURCHASE is a free data retrieval call binding the contract method 0x8f18ab06.
-//
-// Solidity: function MAX_PRIMATE_PURCHASE() view returns(uint256)
-func (_ERC721 *ERC721CallerSession) MAXPRIMATEPURCHASE() (*big.Int, error) {
-	return _ERC721.Contract.MAXPRIMATEPURCHASE(&_ERC721.CallOpts)
-}
-
-// PRIMATERESERVE is a free data retrieval call binding the contract method 0xfa60d42a.
-//
-// Solidity: function PRIMATE_RESERVE() view returns(uint256)
-func (_ERC721 *ERC721Caller) PRIMATERESERVE(opts *bind.CallOpts) (*big.Int, error) {
-	var out []interface{}
-	err := _ERC721.contract.Call(opts, &out, "PRIMATE_RESERVE")
-
-	if err != nil {
-		return *new(*big.Int), err
-	}
-
-	out0 := *abi.ConvertType(out[0], new(*big.Int)).(**big.Int)
-
-	return out0, err
-
-}
-
-// PRIMATERESERVE is a free data retrieval call binding the contract method 0xfa60d42a.
-//
-// Solidity: function PRIMATE_RESERVE() view returns(uint256)
-func (_ERC721 *ERC721Session) PRIMATERESERVE() (*big.Int, error) {
-	return _ERC721.Contract.PRIMATERESERVE(&_ERC721.CallOpts)
-}
-
-// PRIMATERESERVE is a free data retrieval call binding the contract method 0xfa60d42a.
-//
-// Solidity: function PRIMATE_RESERVE() view returns(uint256)
-func (_ERC721 *ERC721CallerSession) PRIMATERESERVE() (*big.Int, error) {
-	return _ERC721.Contract.PRIMATERESERVE(&_ERC721.CallOpts)
-}
-
-// PURCHASEABLEPRESALES is a free data retrieval call binding the contract method 0x9a843c70.
-//
-// Solidity: function PURCHASEABLE_PRESALES() view returns(uint256)
-func (_ERC721 *ERC721Caller) PURCHASEABLEPRESALES(opts *bind.CallOpts) (*big.Int, error) {
-	var out []interface{}
-	err := _ERC721.contract.Call(opts, &out, "PURCHASEABLE_PRESALES")
-
-	if err != nil {
-		return *new(*big.Int), err
-	}
-
-	out0 := *abi.ConvertType(out[0], new(*big.Int)).(**big.Int)
-
-	return out0, err
-
-}
-
-// PURCHASEABLEPRESALES is a free data retrieval call binding the contract method 0x9a843c70.
-//
-// Solidity: function PURCHASEABLE_PRESALES() view returns(uint256)
-func (_ERC721 *ERC721Session) PURCHASEABLEPRESALES() (*big.Int, error) {
-	return _ERC721.Contract.PURCHASEABLEPRESALES(&_ERC721.CallOpts)
-}
-
-// PURCHASEABLEPRESALES is a free data retrieval call binding the contract method 0x9a843c70.
-//
-// Solidity: function PURCHASEABLE_PRESALES() view returns(uint256)
-func (_ERC721 *ERC721CallerSession) PURCHASEABLEPRESALES() (*big.Int, error) {
-	return _ERC721.Contract.PURCHASEABLEPRESALES(&_ERC721.CallOpts)
-}
-
 // BalanceOf is a free data retrieval call binding the contract method 0x70a08231.
 //
 // Solidity: function balanceOf(address owner) view returns(uint256)
@@ -363,37 +208,6 @@ func (_ERC721 *ERC721Session) BalanceOf(owner common.Address) (*big.Int, error) 
 // Solidity: function balanceOf(address owner) view returns(uint256)
 func (_ERC721 *ERC721CallerSession) BalanceOf(owner common.Address) (*big.Int, error) {
 	return _ERC721.Contract.BalanceOf(&_ERC721.CallOpts, owner)
-}
-
-// BaseURI is a free data retrieval call binding the contract method 0x6c0360eb.
-//
-// Solidity: function baseURI() view returns(string)
-func (_ERC721 *ERC721Caller) BaseURI(opts *bind.CallOpts) (string, error) {
-	var out []interface{}
-	err := _ERC721.contract.Call(opts, &out, "baseURI")
-
-	if err != nil {
-		return *new(string), err
-	}
-
-	out0 := *abi.ConvertType(out[0], new(string)).(*string)
-
-	return out0, err
-
-}
-
-// BaseURI is a free data retrieval call binding the contract method 0x6c0360eb.
-//
-// Solidity: function baseURI() view returns(string)
-func (_ERC721 *ERC721Session) BaseURI() (string, error) {
-	return _ERC721.Contract.BaseURI(&_ERC721.CallOpts)
-}
-
-// BaseURI is a free data retrieval call binding the contract method 0x6c0360eb.
-//
-// Solidity: function baseURI() view returns(string)
-func (_ERC721 *ERC721CallerSession) BaseURI() (string, error) {
-	return _ERC721.Contract.BaseURI(&_ERC721.CallOpts)
 }
 
 // GetApproved is a free data retrieval call binding the contract method 0x081812fc.
@@ -456,37 +270,6 @@ func (_ERC721 *ERC721Session) IsApprovedForAll(owner common.Address, operator co
 // Solidity: function isApprovedForAll(address owner, address operator) view returns(bool)
 func (_ERC721 *ERC721CallerSession) IsApprovedForAll(owner common.Address, operator common.Address) (bool, error) {
 	return _ERC721.Contract.IsApprovedForAll(&_ERC721.CallOpts, owner, operator)
-}
-
-// MaxAvailableForSell is a free data retrieval call binding the contract method 0x4eee3c41.
-//
-// Solidity: function maxAvailableForSell() view returns(uint256)
-func (_ERC721 *ERC721Caller) MaxAvailableForSell(opts *bind.CallOpts) (*big.Int, error) {
-	var out []interface{}
-	err := _ERC721.contract.Call(opts, &out, "maxAvailableForSell")
-
-	if err != nil {
-		return *new(*big.Int), err
-	}
-
-	out0 := *abi.ConvertType(out[0], new(*big.Int)).(**big.Int)
-
-	return out0, err
-
-}
-
-// MaxAvailableForSell is a free data retrieval call binding the contract method 0x4eee3c41.
-//
-// Solidity: function maxAvailableForSell() view returns(uint256)
-func (_ERC721 *ERC721Session) MaxAvailableForSell() (*big.Int, error) {
-	return _ERC721.Contract.MaxAvailableForSell(&_ERC721.CallOpts)
-}
-
-// MaxAvailableForSell is a free data retrieval call binding the contract method 0x4eee3c41.
-//
-// Solidity: function maxAvailableForSell() view returns(uint256)
-func (_ERC721 *ERC721CallerSession) MaxAvailableForSell() (*big.Int, error) {
-	return _ERC721.Contract.MaxAvailableForSell(&_ERC721.CallOpts)
 }
 
 // Name is a free data retrieval call binding the contract method 0x06fdde03.
@@ -582,43 +365,12 @@ func (_ERC721 *ERC721CallerSession) OwnerOf(tokenId *big.Int) (common.Address, e
 	return _ERC721.Contract.OwnerOf(&_ERC721.CallOpts, tokenId)
 }
 
-// PreSaleBuyInPrice is a free data retrieval call binding the contract method 0xa4af0941.
+// Paused is a free data retrieval call binding the contract method 0x5c975abb.
 //
-// Solidity: function preSaleBuyInPrice() view returns(uint256)
-func (_ERC721 *ERC721Caller) PreSaleBuyInPrice(opts *bind.CallOpts) (*big.Int, error) {
+// Solidity: function paused() view returns(bool)
+func (_ERC721 *ERC721Caller) Paused(opts *bind.CallOpts) (bool, error) {
 	var out []interface{}
-	err := _ERC721.contract.Call(opts, &out, "preSaleBuyInPrice")
-
-	if err != nil {
-		return *new(*big.Int), err
-	}
-
-	out0 := *abi.ConvertType(out[0], new(*big.Int)).(**big.Int)
-
-	return out0, err
-
-}
-
-// PreSaleBuyInPrice is a free data retrieval call binding the contract method 0xa4af0941.
-//
-// Solidity: function preSaleBuyInPrice() view returns(uint256)
-func (_ERC721 *ERC721Session) PreSaleBuyInPrice() (*big.Int, error) {
-	return _ERC721.Contract.PreSaleBuyInPrice(&_ERC721.CallOpts)
-}
-
-// PreSaleBuyInPrice is a free data retrieval call binding the contract method 0xa4af0941.
-//
-// Solidity: function preSaleBuyInPrice() view returns(uint256)
-func (_ERC721 *ERC721CallerSession) PreSaleBuyInPrice() (*big.Int, error) {
-	return _ERC721.Contract.PreSaleBuyInPrice(&_ERC721.CallOpts)
-}
-
-// PreSaleIsActive is a free data retrieval call binding the contract method 0x1f0234d8.
-//
-// Solidity: function preSaleIsActive() view returns(bool)
-func (_ERC721 *ERC721Caller) PreSaleIsActive(opts *bind.CallOpts) (bool, error) {
-	var out []interface{}
-	err := _ERC721.contract.Call(opts, &out, "preSaleIsActive")
+	err := _ERC721.contract.Call(opts, &out, "paused")
 
 	if err != nil {
 		return *new(bool), err
@@ -630,111 +382,18 @@ func (_ERC721 *ERC721Caller) PreSaleIsActive(opts *bind.CallOpts) (bool, error) 
 
 }
 
-// PreSaleIsActive is a free data retrieval call binding the contract method 0x1f0234d8.
+// Paused is a free data retrieval call binding the contract method 0x5c975abb.
 //
-// Solidity: function preSaleIsActive() view returns(bool)
-func (_ERC721 *ERC721Session) PreSaleIsActive() (bool, error) {
-	return _ERC721.Contract.PreSaleIsActive(&_ERC721.CallOpts)
+// Solidity: function paused() view returns(bool)
+func (_ERC721 *ERC721Session) Paused() (bool, error) {
+	return _ERC721.Contract.Paused(&_ERC721.CallOpts)
 }
 
-// PreSaleIsActive is a free data retrieval call binding the contract method 0x1f0234d8.
+// Paused is a free data retrieval call binding the contract method 0x5c975abb.
 //
-// Solidity: function preSaleIsActive() view returns(bool)
-func (_ERC721 *ERC721CallerSession) PreSaleIsActive() (bool, error) {
-	return _ERC721.Contract.PreSaleIsActive(&_ERC721.CallOpts)
-}
-
-// PresalePurchases is a free data retrieval call binding the contract method 0xa68574d3.
-//
-// Solidity: function presalePurchases(address ) view returns(uint256)
-func (_ERC721 *ERC721Caller) PresalePurchases(opts *bind.CallOpts, arg0 common.Address) (*big.Int, error) {
-	var out []interface{}
-	err := _ERC721.contract.Call(opts, &out, "presalePurchases", arg0)
-
-	if err != nil {
-		return *new(*big.Int), err
-	}
-
-	out0 := *abi.ConvertType(out[0], new(*big.Int)).(**big.Int)
-
-	return out0, err
-
-}
-
-// PresalePurchases is a free data retrieval call binding the contract method 0xa68574d3.
-//
-// Solidity: function presalePurchases(address ) view returns(uint256)
-func (_ERC721 *ERC721Session) PresalePurchases(arg0 common.Address) (*big.Int, error) {
-	return _ERC721.Contract.PresalePurchases(&_ERC721.CallOpts, arg0)
-}
-
-// PresalePurchases is a free data retrieval call binding the contract method 0xa68574d3.
-//
-// Solidity: function presalePurchases(address ) view returns(uint256)
-func (_ERC721 *ERC721CallerSession) PresalePurchases(arg0 common.Address) (*big.Int, error) {
-	return _ERC721.Contract.PresalePurchases(&_ERC721.CallOpts, arg0)
-}
-
-// Price is a free data retrieval call binding the contract method 0xa035b1fe.
-//
-// Solidity: function price() view returns(uint256)
-func (_ERC721 *ERC721Caller) Price(opts *bind.CallOpts) (*big.Int, error) {
-	var out []interface{}
-	err := _ERC721.contract.Call(opts, &out, "price")
-
-	if err != nil {
-		return *new(*big.Int), err
-	}
-
-	out0 := *abi.ConvertType(out[0], new(*big.Int)).(**big.Int)
-
-	return out0, err
-
-}
-
-// Price is a free data retrieval call binding the contract method 0xa035b1fe.
-//
-// Solidity: function price() view returns(uint256)
-func (_ERC721 *ERC721Session) Price() (*big.Int, error) {
-	return _ERC721.Contract.Price(&_ERC721.CallOpts)
-}
-
-// Price is a free data retrieval call binding the contract method 0xa035b1fe.
-//
-// Solidity: function price() view returns(uint256)
-func (_ERC721 *ERC721CallerSession) Price() (*big.Int, error) {
-	return _ERC721.Contract.Price(&_ERC721.CallOpts)
-}
-
-// SaleIsActive is a free data retrieval call binding the contract method 0xeb8d2444.
-//
-// Solidity: function saleIsActive() view returns(bool)
-func (_ERC721 *ERC721Caller) SaleIsActive(opts *bind.CallOpts) (bool, error) {
-	var out []interface{}
-	err := _ERC721.contract.Call(opts, &out, "saleIsActive")
-
-	if err != nil {
-		return *new(bool), err
-	}
-
-	out0 := *abi.ConvertType(out[0], new(bool)).(*bool)
-
-	return out0, err
-
-}
-
-// SaleIsActive is a free data retrieval call binding the contract method 0xeb8d2444.
-//
-// Solidity: function saleIsActive() view returns(bool)
-func (_ERC721 *ERC721Session) SaleIsActive() (bool, error) {
-	return _ERC721.Contract.SaleIsActive(&_ERC721.CallOpts)
-}
-
-// SaleIsActive is a free data retrieval call binding the contract method 0xeb8d2444.
-//
-// Solidity: function saleIsActive() view returns(bool)
-func (_ERC721 *ERC721CallerSession) SaleIsActive() (bool, error) {
-	return _ERC721.Contract.SaleIsActive(&_ERC721.CallOpts)
+// Solidity: function paused() view returns(bool)
+func (_ERC721 *ERC721CallerSession) Paused() (bool, error) {
+	return _ERC721.Contract.Paused(&_ERC721.CallOpts)
 }
 
 // SupportsInterface is a free data retrieval call binding the contract method 0x01ffc9a7.
@@ -923,37 +582,6 @@ func (_ERC721 *ERC721CallerSession) TotalSupply() (*big.Int, error) {
 	return _ERC721.Contract.TotalSupply(&_ERC721.CallOpts)
 }
 
-// Whitelist is a free data retrieval call binding the contract method 0x9b19251a.
-//
-// Solidity: function whitelist(address ) view returns(bool)
-func (_ERC721 *ERC721Caller) Whitelist(opts *bind.CallOpts, arg0 common.Address) (bool, error) {
-	var out []interface{}
-	err := _ERC721.contract.Call(opts, &out, "whitelist", arg0)
-
-	if err != nil {
-		return *new(bool), err
-	}
-
-	out0 := *abi.ConvertType(out[0], new(bool)).(*bool)
-
-	return out0, err
-
-}
-
-// Whitelist is a free data retrieval call binding the contract method 0x9b19251a.
-//
-// Solidity: function whitelist(address ) view returns(bool)
-func (_ERC721 *ERC721Session) Whitelist(arg0 common.Address) (bool, error) {
-	return _ERC721.Contract.Whitelist(&_ERC721.CallOpts, arg0)
-}
-
-// Whitelist is a free data retrieval call binding the contract method 0x9b19251a.
-//
-// Solidity: function whitelist(address ) view returns(bool)
-func (_ERC721 *ERC721CallerSession) Whitelist(arg0 common.Address) (bool, error) {
-	return _ERC721.Contract.Whitelist(&_ERC721.CallOpts, arg0)
-}
-
 // Approve is a paid mutator transaction binding the contract method 0x095ea7b3.
 //
 // Solidity: function approve(address to, uint256 tokenId) returns()
@@ -975,130 +603,25 @@ func (_ERC721 *ERC721TransactorSession) Approve(to common.Address, tokenId *big.
 	return _ERC721.Contract.Approve(&_ERC721.TransactOpts, to, tokenId)
 }
 
-// BuyIntoPreSale is a paid mutator transaction binding the contract method 0x1057f4f4.
+// Pause is a paid mutator transaction binding the contract method 0x8456cb59.
 //
-// Solidity: function buyIntoPreSale() payable returns()
-func (_ERC721 *ERC721Transactor) BuyIntoPreSale(opts *bind.TransactOpts) (*types.Transaction, error) {
-	return _ERC721.contract.Transact(opts, "buyIntoPreSale")
+// Solidity: function pause() returns()
+func (_ERC721 *ERC721Transactor) Pause(opts *bind.TransactOpts) (*types.Transaction, error) {
+	return _ERC721.contract.Transact(opts, "pause")
 }
 
-// BuyIntoPreSale is a paid mutator transaction binding the contract method 0x1057f4f4.
+// Pause is a paid mutator transaction binding the contract method 0x8456cb59.
 //
-// Solidity: function buyIntoPreSale() payable returns()
-func (_ERC721 *ERC721Session) BuyIntoPreSale() (*types.Transaction, error) {
-	return _ERC721.Contract.BuyIntoPreSale(&_ERC721.TransactOpts)
+// Solidity: function pause() returns()
+func (_ERC721 *ERC721Session) Pause() (*types.Transaction, error) {
+	return _ERC721.Contract.Pause(&_ERC721.TransactOpts)
 }
 
-// BuyIntoPreSale is a paid mutator transaction binding the contract method 0x1057f4f4.
+// Pause is a paid mutator transaction binding the contract method 0x8456cb59.
 //
-// Solidity: function buyIntoPreSale() payable returns()
-func (_ERC721 *ERC721TransactorSession) BuyIntoPreSale() (*types.Transaction, error) {
-	return _ERC721.Contract.BuyIntoPreSale(&_ERC721.TransactOpts)
-}
-
-// FlipPreSaleState is a paid mutator transaction binding the contract method 0xf0325549.
-//
-// Solidity: function flipPreSaleState() returns()
-func (_ERC721 *ERC721Transactor) FlipPreSaleState(opts *bind.TransactOpts) (*types.Transaction, error) {
-	return _ERC721.contract.Transact(opts, "flipPreSaleState")
-}
-
-// FlipPreSaleState is a paid mutator transaction binding the contract method 0xf0325549.
-//
-// Solidity: function flipPreSaleState() returns()
-func (_ERC721 *ERC721Session) FlipPreSaleState() (*types.Transaction, error) {
-	return _ERC721.Contract.FlipPreSaleState(&_ERC721.TransactOpts)
-}
-
-// FlipPreSaleState is a paid mutator transaction binding the contract method 0xf0325549.
-//
-// Solidity: function flipPreSaleState() returns()
-func (_ERC721 *ERC721TransactorSession) FlipPreSaleState() (*types.Transaction, error) {
-	return _ERC721.Contract.FlipPreSaleState(&_ERC721.TransactOpts)
-}
-
-// FlipSaleState is a paid mutator transaction binding the contract method 0x34918dfd.
-//
-// Solidity: function flipSaleState() returns()
-func (_ERC721 *ERC721Transactor) FlipSaleState(opts *bind.TransactOpts) (*types.Transaction, error) {
-	return _ERC721.contract.Transact(opts, "flipSaleState")
-}
-
-// FlipSaleState is a paid mutator transaction binding the contract method 0x34918dfd.
-//
-// Solidity: function flipSaleState() returns()
-func (_ERC721 *ERC721Session) FlipSaleState() (*types.Transaction, error) {
-	return _ERC721.Contract.FlipSaleState(&_ERC721.TransactOpts)
-}
-
-// FlipSaleState is a paid mutator transaction binding the contract method 0x34918dfd.
-//
-// Solidity: function flipSaleState() returns()
-func (_ERC721 *ERC721TransactorSession) FlipSaleState() (*types.Transaction, error) {
-	return _ERC721.Contract.FlipSaleState(&_ERC721.TransactOpts)
-}
-
-// MintPreSalePrimates is a paid mutator transaction binding the contract method 0xccd53e97.
-//
-// Solidity: function mintPreSalePrimates(uint256 numberOfTokens) payable returns()
-func (_ERC721 *ERC721Transactor) MintPreSalePrimates(opts *bind.TransactOpts, numberOfTokens *big.Int) (*types.Transaction, error) {
-	return _ERC721.contract.Transact(opts, "mintPreSalePrimates", numberOfTokens)
-}
-
-// MintPreSalePrimates is a paid mutator transaction binding the contract method 0xccd53e97.
-//
-// Solidity: function mintPreSalePrimates(uint256 numberOfTokens) payable returns()
-func (_ERC721 *ERC721Session) MintPreSalePrimates(numberOfTokens *big.Int) (*types.Transaction, error) {
-	return _ERC721.Contract.MintPreSalePrimates(&_ERC721.TransactOpts, numberOfTokens)
-}
-
-// MintPreSalePrimates is a paid mutator transaction binding the contract method 0xccd53e97.
-//
-// Solidity: function mintPreSalePrimates(uint256 numberOfTokens) payable returns()
-func (_ERC721 *ERC721TransactorSession) MintPreSalePrimates(numberOfTokens *big.Int) (*types.Transaction, error) {
-	return _ERC721.Contract.MintPreSalePrimates(&_ERC721.TransactOpts, numberOfTokens)
-}
-
-// MintPrimates is a paid mutator transaction binding the contract method 0xa113482c.
-//
-// Solidity: function mintPrimates(uint256 numberOfTokens) payable returns()
-func (_ERC721 *ERC721Transactor) MintPrimates(opts *bind.TransactOpts, numberOfTokens *big.Int) (*types.Transaction, error) {
-	return _ERC721.contract.Transact(opts, "mintPrimates", numberOfTokens)
-}
-
-// MintPrimates is a paid mutator transaction binding the contract method 0xa113482c.
-//
-// Solidity: function mintPrimates(uint256 numberOfTokens) payable returns()
-func (_ERC721 *ERC721Session) MintPrimates(numberOfTokens *big.Int) (*types.Transaction, error) {
-	return _ERC721.Contract.MintPrimates(&_ERC721.TransactOpts, numberOfTokens)
-}
-
-// MintPrimates is a paid mutator transaction binding the contract method 0xa113482c.
-//
-// Solidity: function mintPrimates(uint256 numberOfTokens) payable returns()
-func (_ERC721 *ERC721TransactorSession) MintPrimates(numberOfTokens *big.Int) (*types.Transaction, error) {
-	return _ERC721.Contract.MintPrimates(&_ERC721.TransactOpts, numberOfTokens)
-}
-
-// RemoveWhitelistAddresses is a paid mutator transaction binding the contract method 0xb83921a6.
-//
-// Solidity: function removeWhitelistAddresses(address[] addresses) returns()
-func (_ERC721 *ERC721Transactor) RemoveWhitelistAddresses(opts *bind.TransactOpts, addresses []common.Address) (*types.Transaction, error) {
-	return _ERC721.contract.Transact(opts, "removeWhitelistAddresses", addresses)
-}
-
-// RemoveWhitelistAddresses is a paid mutator transaction binding the contract method 0xb83921a6.
-//
-// Solidity: function removeWhitelistAddresses(address[] addresses) returns()
-func (_ERC721 *ERC721Session) RemoveWhitelistAddresses(addresses []common.Address) (*types.Transaction, error) {
-	return _ERC721.Contract.RemoveWhitelistAddresses(&_ERC721.TransactOpts, addresses)
-}
-
-// RemoveWhitelistAddresses is a paid mutator transaction binding the contract method 0xb83921a6.
-//
-// Solidity: function removeWhitelistAddresses(address[] addresses) returns()
-func (_ERC721 *ERC721TransactorSession) RemoveWhitelistAddresses(addresses []common.Address) (*types.Transaction, error) {
-	return _ERC721.Contract.RemoveWhitelistAddresses(&_ERC721.TransactOpts, addresses)
+// Solidity: function pause() returns()
+func (_ERC721 *ERC721TransactorSession) Pause() (*types.Transaction, error) {
+	return _ERC721.Contract.Pause(&_ERC721.TransactOpts)
 }
 
 // RenounceOwnership is a paid mutator transaction binding the contract method 0x715018a6.
@@ -1122,25 +645,25 @@ func (_ERC721 *ERC721TransactorSession) RenounceOwnership() (*types.Transaction,
 	return _ERC721.Contract.RenounceOwnership(&_ERC721.TransactOpts)
 }
 
-// ReservePrimates is a paid mutator transaction binding the contract method 0xaa2652de.
+// SafeMint is a paid mutator transaction binding the contract method 0x40d097c3.
 //
-// Solidity: function reservePrimates(uint256 numberOfTokens) returns()
-func (_ERC721 *ERC721Transactor) ReservePrimates(opts *bind.TransactOpts, numberOfTokens *big.Int) (*types.Transaction, error) {
-	return _ERC721.contract.Transact(opts, "reservePrimates", numberOfTokens)
+// Solidity: function safeMint(address to) returns()
+func (_ERC721 *ERC721Transactor) SafeMint(opts *bind.TransactOpts, to common.Address) (*types.Transaction, error) {
+	return _ERC721.contract.Transact(opts, "safeMint", to)
 }
 
-// ReservePrimates is a paid mutator transaction binding the contract method 0xaa2652de.
+// SafeMint is a paid mutator transaction binding the contract method 0x40d097c3.
 //
-// Solidity: function reservePrimates(uint256 numberOfTokens) returns()
-func (_ERC721 *ERC721Session) ReservePrimates(numberOfTokens *big.Int) (*types.Transaction, error) {
-	return _ERC721.Contract.ReservePrimates(&_ERC721.TransactOpts, numberOfTokens)
+// Solidity: function safeMint(address to) returns()
+func (_ERC721 *ERC721Session) SafeMint(to common.Address) (*types.Transaction, error) {
+	return _ERC721.Contract.SafeMint(&_ERC721.TransactOpts, to)
 }
 
-// ReservePrimates is a paid mutator transaction binding the contract method 0xaa2652de.
+// SafeMint is a paid mutator transaction binding the contract method 0x40d097c3.
 //
-// Solidity: function reservePrimates(uint256 numberOfTokens) returns()
-func (_ERC721 *ERC721TransactorSession) ReservePrimates(numberOfTokens *big.Int) (*types.Transaction, error) {
-	return _ERC721.Contract.ReservePrimates(&_ERC721.TransactOpts, numberOfTokens)
+// Solidity: function safeMint(address to) returns()
+func (_ERC721 *ERC721TransactorSession) SafeMint(to common.Address) (*types.Transaction, error) {
+	return _ERC721.Contract.SafeMint(&_ERC721.TransactOpts, to)
 }
 
 // SafeTransferFrom is a paid mutator transaction binding the contract method 0x42842e0e.
@@ -1206,69 +729,6 @@ func (_ERC721 *ERC721TransactorSession) SetApprovalForAll(operator common.Addres
 	return _ERC721.Contract.SetApprovalForAll(&_ERC721.TransactOpts, operator, approved)
 }
 
-// SetBaseURI is a paid mutator transaction binding the contract method 0x55f804b3.
-//
-// Solidity: function setBaseURI(string _newBaseURI) returns()
-func (_ERC721 *ERC721Transactor) SetBaseURI(opts *bind.TransactOpts, _newBaseURI string) (*types.Transaction, error) {
-	return _ERC721.contract.Transact(opts, "setBaseURI", _newBaseURI)
-}
-
-// SetBaseURI is a paid mutator transaction binding the contract method 0x55f804b3.
-//
-// Solidity: function setBaseURI(string _newBaseURI) returns()
-func (_ERC721 *ERC721Session) SetBaseURI(_newBaseURI string) (*types.Transaction, error) {
-	return _ERC721.Contract.SetBaseURI(&_ERC721.TransactOpts, _newBaseURI)
-}
-
-// SetBaseURI is a paid mutator transaction binding the contract method 0x55f804b3.
-//
-// Solidity: function setBaseURI(string _newBaseURI) returns()
-func (_ERC721 *ERC721TransactorSession) SetBaseURI(_newBaseURI string) (*types.Transaction, error) {
-	return _ERC721.Contract.SetBaseURI(&_ERC721.TransactOpts, _newBaseURI)
-}
-
-// SetPreSaleBuyInPrice is a paid mutator transaction binding the contract method 0xf1a1d391.
-//
-// Solidity: function setPreSaleBuyInPrice(uint256 _price) returns()
-func (_ERC721 *ERC721Transactor) SetPreSaleBuyInPrice(opts *bind.TransactOpts, _price *big.Int) (*types.Transaction, error) {
-	return _ERC721.contract.Transact(opts, "setPreSaleBuyInPrice", _price)
-}
-
-// SetPreSaleBuyInPrice is a paid mutator transaction binding the contract method 0xf1a1d391.
-//
-// Solidity: function setPreSaleBuyInPrice(uint256 _price) returns()
-func (_ERC721 *ERC721Session) SetPreSaleBuyInPrice(_price *big.Int) (*types.Transaction, error) {
-	return _ERC721.Contract.SetPreSaleBuyInPrice(&_ERC721.TransactOpts, _price)
-}
-
-// SetPreSaleBuyInPrice is a paid mutator transaction binding the contract method 0xf1a1d391.
-//
-// Solidity: function setPreSaleBuyInPrice(uint256 _price) returns()
-func (_ERC721 *ERC721TransactorSession) SetPreSaleBuyInPrice(_price *big.Int) (*types.Transaction, error) {
-	return _ERC721.Contract.SetPreSaleBuyInPrice(&_ERC721.TransactOpts, _price)
-}
-
-// SetPrice is a paid mutator transaction binding the contract method 0x91b7f5ed.
-//
-// Solidity: function setPrice(uint256 _price) returns()
-func (_ERC721 *ERC721Transactor) SetPrice(opts *bind.TransactOpts, _price *big.Int) (*types.Transaction, error) {
-	return _ERC721.contract.Transact(opts, "setPrice", _price)
-}
-
-// SetPrice is a paid mutator transaction binding the contract method 0x91b7f5ed.
-//
-// Solidity: function setPrice(uint256 _price) returns()
-func (_ERC721 *ERC721Session) SetPrice(_price *big.Int) (*types.Transaction, error) {
-	return _ERC721.Contract.SetPrice(&_ERC721.TransactOpts, _price)
-}
-
-// SetPrice is a paid mutator transaction binding the contract method 0x91b7f5ed.
-//
-// Solidity: function setPrice(uint256 _price) returns()
-func (_ERC721 *ERC721TransactorSession) SetPrice(_price *big.Int) (*types.Transaction, error) {
-	return _ERC721.Contract.SetPrice(&_ERC721.TransactOpts, _price)
-}
-
 // TransferFrom is a paid mutator transaction binding the contract method 0x23b872dd.
 //
 // Solidity: function transferFrom(address from, address to, uint256 tokenId) returns()
@@ -1311,46 +771,25 @@ func (_ERC721 *ERC721TransactorSession) TransferOwnership(newOwner common.Addres
 	return _ERC721.Contract.TransferOwnership(&_ERC721.TransactOpts, newOwner)
 }
 
-// WhitelistAddresses is a paid mutator transaction binding the contract method 0x2bf04304.
+// Unpause is a paid mutator transaction binding the contract method 0x3f4ba83a.
 //
-// Solidity: function whitelistAddresses(address[] addresses) returns()
-func (_ERC721 *ERC721Transactor) WhitelistAddresses(opts *bind.TransactOpts, addresses []common.Address) (*types.Transaction, error) {
-	return _ERC721.contract.Transact(opts, "whitelistAddresses", addresses)
+// Solidity: function unpause() returns()
+func (_ERC721 *ERC721Transactor) Unpause(opts *bind.TransactOpts) (*types.Transaction, error) {
+	return _ERC721.contract.Transact(opts, "unpause")
 }
 
-// WhitelistAddresses is a paid mutator transaction binding the contract method 0x2bf04304.
+// Unpause is a paid mutator transaction binding the contract method 0x3f4ba83a.
 //
-// Solidity: function whitelistAddresses(address[] addresses) returns()
-func (_ERC721 *ERC721Session) WhitelistAddresses(addresses []common.Address) (*types.Transaction, error) {
-	return _ERC721.Contract.WhitelistAddresses(&_ERC721.TransactOpts, addresses)
+// Solidity: function unpause() returns()
+func (_ERC721 *ERC721Session) Unpause() (*types.Transaction, error) {
+	return _ERC721.Contract.Unpause(&_ERC721.TransactOpts)
 }
 
-// WhitelistAddresses is a paid mutator transaction binding the contract method 0x2bf04304.
+// Unpause is a paid mutator transaction binding the contract method 0x3f4ba83a.
 //
-// Solidity: function whitelistAddresses(address[] addresses) returns()
-func (_ERC721 *ERC721TransactorSession) WhitelistAddresses(addresses []common.Address) (*types.Transaction, error) {
-	return _ERC721.Contract.WhitelistAddresses(&_ERC721.TransactOpts, addresses)
-}
-
-// Withdraw is a paid mutator transaction binding the contract method 0x3ccfd60b.
-//
-// Solidity: function withdraw() returns()
-func (_ERC721 *ERC721Transactor) Withdraw(opts *bind.TransactOpts) (*types.Transaction, error) {
-	return _ERC721.contract.Transact(opts, "withdraw")
-}
-
-// Withdraw is a paid mutator transaction binding the contract method 0x3ccfd60b.
-//
-// Solidity: function withdraw() returns()
-func (_ERC721 *ERC721Session) Withdraw() (*types.Transaction, error) {
-	return _ERC721.Contract.Withdraw(&_ERC721.TransactOpts)
-}
-
-// Withdraw is a paid mutator transaction binding the contract method 0x3ccfd60b.
-//
-// Solidity: function withdraw() returns()
-func (_ERC721 *ERC721TransactorSession) Withdraw() (*types.Transaction, error) {
-	return _ERC721.Contract.Withdraw(&_ERC721.TransactOpts)
+// Solidity: function unpause() returns()
+func (_ERC721 *ERC721TransactorSession) Unpause() (*types.Transaction, error) {
+	return _ERC721.Contract.Unpause(&_ERC721.TransactOpts)
 }
 
 // ERC721ApprovalIterator is returned from FilterApproval and is used to iterate over the raw logs and unpacked data for Approval events raised by the ERC721 contract.
@@ -1822,6 +1261,140 @@ func (_ERC721 *ERC721Filterer) ParseOwnershipTransferred(log types.Log) (*ERC721
 	return event, nil
 }
 
+// ERC721PausedIterator is returned from FilterPaused and is used to iterate over the raw logs and unpacked data for Paused events raised by the ERC721 contract.
+type ERC721PausedIterator struct {
+	Event *ERC721Paused // Event containing the contract specifics and raw log
+
+	contract *bind.BoundContract // Generic contract to use for unpacking event data
+	event    string              // Event name to use for unpacking event data
+
+	logs chan types.Log        // Log channel receiving the found contract events
+	sub  ethereum.Subscription // Subscription for errors, completion and termination
+	done bool                  // Whether the subscription completed delivering logs
+	fail error                 // Occurred error to stop iteration
+}
+
+// Next advances the iterator to the subsequent event, returning whether there
+// are any more events found. In case of a retrieval or parsing error, false is
+// returned and Error() can be queried for the exact failure.
+func (it *ERC721PausedIterator) Next() bool {
+	// If the iterator failed, stop iterating
+	if it.fail != nil {
+		return false
+	}
+	// If the iterator completed, deliver directly whatever's available
+	if it.done {
+		select {
+		case log := <-it.logs:
+			it.Event = new(ERC721Paused)
+			if err := it.contract.UnpackLog(it.Event, it.event, log); err != nil {
+				it.fail = err
+				return false
+			}
+			it.Event.Raw = log
+			return true
+
+		default:
+			return false
+		}
+	}
+	// Iterator still in progress, wait for either a data or an error event
+	select {
+	case log := <-it.logs:
+		it.Event = new(ERC721Paused)
+		if err := it.contract.UnpackLog(it.Event, it.event, log); err != nil {
+			it.fail = err
+			return false
+		}
+		it.Event.Raw = log
+		return true
+
+	case err := <-it.sub.Err():
+		it.done = true
+		it.fail = err
+		return it.Next()
+	}
+}
+
+// Error returns any retrieval or parsing error occurred during filtering.
+func (it *ERC721PausedIterator) Error() error {
+	return it.fail
+}
+
+// Close terminates the iteration process, releasing any pending underlying
+// resources.
+func (it *ERC721PausedIterator) Close() error {
+	it.sub.Unsubscribe()
+	return nil
+}
+
+// ERC721Paused represents a Paused event raised by the ERC721 contract.
+type ERC721Paused struct {
+	Account common.Address
+	Raw     types.Log // Blockchain specific contextual infos
+}
+
+// FilterPaused is a free log retrieval operation binding the contract event 0x62e78cea01bee320cd4e420270b5ea74000d11b0c9f74754ebdbfc544b05a258.
+//
+// Solidity: event Paused(address account)
+func (_ERC721 *ERC721Filterer) FilterPaused(opts *bind.FilterOpts) (*ERC721PausedIterator, error) {
+
+	logs, sub, err := _ERC721.contract.FilterLogs(opts, "Paused")
+	if err != nil {
+		return nil, err
+	}
+	return &ERC721PausedIterator{contract: _ERC721.contract, event: "Paused", logs: logs, sub: sub}, nil
+}
+
+// WatchPaused is a free log subscription operation binding the contract event 0x62e78cea01bee320cd4e420270b5ea74000d11b0c9f74754ebdbfc544b05a258.
+//
+// Solidity: event Paused(address account)
+func (_ERC721 *ERC721Filterer) WatchPaused(opts *bind.WatchOpts, sink chan<- *ERC721Paused) (event.Subscription, error) {
+
+	logs, sub, err := _ERC721.contract.WatchLogs(opts, "Paused")
+	if err != nil {
+		return nil, err
+	}
+	return event.NewSubscription(func(quit <-chan struct{}) error {
+		defer sub.Unsubscribe()
+		for {
+			select {
+			case log := <-logs:
+				// New log arrived, parse the event and forward to the user
+				event := new(ERC721Paused)
+				if err := _ERC721.contract.UnpackLog(event, "Paused", log); err != nil {
+					return err
+				}
+				event.Raw = log
+
+				select {
+				case sink <- event:
+				case err := <-sub.Err():
+					return err
+				case <-quit:
+					return nil
+				}
+			case err := <-sub.Err():
+				return err
+			case <-quit:
+				return nil
+			}
+		}
+	}), nil
+}
+
+// ParsePaused is a log parse operation binding the contract event 0x62e78cea01bee320cd4e420270b5ea74000d11b0c9f74754ebdbfc544b05a258.
+//
+// Solidity: event Paused(address account)
+func (_ERC721 *ERC721Filterer) ParsePaused(log types.Log) (*ERC721Paused, error) {
+	event := new(ERC721Paused)
+	if err := _ERC721.contract.UnpackLog(event, "Paused", log); err != nil {
+		return nil, err
+	}
+	event.Raw = log
+	return event, nil
+}
+
 // ERC721TransferIterator is returned from FilterTransfer and is used to iterate over the raw logs and unpacked data for Transfer events raised by the ERC721 contract.
 type ERC721TransferIterator struct {
 	Event *ERC721Transfer // Event containing the contract specifics and raw log
@@ -1978,6 +1551,140 @@ func (_ERC721 *ERC721Filterer) WatchTransfer(opts *bind.WatchOpts, sink chan<- *
 func (_ERC721 *ERC721Filterer) ParseTransfer(log types.Log) (*ERC721Transfer, error) {
 	event := new(ERC721Transfer)
 	if err := _ERC721.contract.UnpackLog(event, "Transfer", log); err != nil {
+		return nil, err
+	}
+	event.Raw = log
+	return event, nil
+}
+
+// ERC721UnpausedIterator is returned from FilterUnpaused and is used to iterate over the raw logs and unpacked data for Unpaused events raised by the ERC721 contract.
+type ERC721UnpausedIterator struct {
+	Event *ERC721Unpaused // Event containing the contract specifics and raw log
+
+	contract *bind.BoundContract // Generic contract to use for unpacking event data
+	event    string              // Event name to use for unpacking event data
+
+	logs chan types.Log        // Log channel receiving the found contract events
+	sub  ethereum.Subscription // Subscription for errors, completion and termination
+	done bool                  // Whether the subscription completed delivering logs
+	fail error                 // Occurred error to stop iteration
+}
+
+// Next advances the iterator to the subsequent event, returning whether there
+// are any more events found. In case of a retrieval or parsing error, false is
+// returned and Error() can be queried for the exact failure.
+func (it *ERC721UnpausedIterator) Next() bool {
+	// If the iterator failed, stop iterating
+	if it.fail != nil {
+		return false
+	}
+	// If the iterator completed, deliver directly whatever's available
+	if it.done {
+		select {
+		case log := <-it.logs:
+			it.Event = new(ERC721Unpaused)
+			if err := it.contract.UnpackLog(it.Event, it.event, log); err != nil {
+				it.fail = err
+				return false
+			}
+			it.Event.Raw = log
+			return true
+
+		default:
+			return false
+		}
+	}
+	// Iterator still in progress, wait for either a data or an error event
+	select {
+	case log := <-it.logs:
+		it.Event = new(ERC721Unpaused)
+		if err := it.contract.UnpackLog(it.Event, it.event, log); err != nil {
+			it.fail = err
+			return false
+		}
+		it.Event.Raw = log
+		return true
+
+	case err := <-it.sub.Err():
+		it.done = true
+		it.fail = err
+		return it.Next()
+	}
+}
+
+// Error returns any retrieval or parsing error occurred during filtering.
+func (it *ERC721UnpausedIterator) Error() error {
+	return it.fail
+}
+
+// Close terminates the iteration process, releasing any pending underlying
+// resources.
+func (it *ERC721UnpausedIterator) Close() error {
+	it.sub.Unsubscribe()
+	return nil
+}
+
+// ERC721Unpaused represents a Unpaused event raised by the ERC721 contract.
+type ERC721Unpaused struct {
+	Account common.Address
+	Raw     types.Log // Blockchain specific contextual infos
+}
+
+// FilterUnpaused is a free log retrieval operation binding the contract event 0x5db9ee0a495bf2e6ff9c91a7834c1ba4fdd244a5e8aa4e537bd38aeae4b073aa.
+//
+// Solidity: event Unpaused(address account)
+func (_ERC721 *ERC721Filterer) FilterUnpaused(opts *bind.FilterOpts) (*ERC721UnpausedIterator, error) {
+
+	logs, sub, err := _ERC721.contract.FilterLogs(opts, "Unpaused")
+	if err != nil {
+		return nil, err
+	}
+	return &ERC721UnpausedIterator{contract: _ERC721.contract, event: "Unpaused", logs: logs, sub: sub}, nil
+}
+
+// WatchUnpaused is a free log subscription operation binding the contract event 0x5db9ee0a495bf2e6ff9c91a7834c1ba4fdd244a5e8aa4e537bd38aeae4b073aa.
+//
+// Solidity: event Unpaused(address account)
+func (_ERC721 *ERC721Filterer) WatchUnpaused(opts *bind.WatchOpts, sink chan<- *ERC721Unpaused) (event.Subscription, error) {
+
+	logs, sub, err := _ERC721.contract.WatchLogs(opts, "Unpaused")
+	if err != nil {
+		return nil, err
+	}
+	return event.NewSubscription(func(quit <-chan struct{}) error {
+		defer sub.Unsubscribe()
+		for {
+			select {
+			case log := <-logs:
+				// New log arrived, parse the event and forward to the user
+				event := new(ERC721Unpaused)
+				if err := _ERC721.contract.UnpackLog(event, "Unpaused", log); err != nil {
+					return err
+				}
+				event.Raw = log
+
+				select {
+				case sink <- event:
+				case err := <-sub.Err():
+					return err
+				case <-quit:
+					return nil
+				}
+			case err := <-sub.Err():
+				return err
+			case <-quit:
+				return nil
+			}
+		}
+	}), nil
+}
+
+// ParseUnpaused is a log parse operation binding the contract event 0x5db9ee0a495bf2e6ff9c91a7834c1ba4fdd244a5e8aa4e537bd38aeae4b073aa.
+//
+// Solidity: event Unpaused(address account)
+func (_ERC721 *ERC721Filterer) ParseUnpaused(log types.Log) (*ERC721Unpaused, error) {
+	event := new(ERC721Unpaused)
+	if err := _ERC721.contract.UnpackLog(event, "Unpaused", log); err != nil {
 		return nil, err
 	}
 	event.Raw = log
